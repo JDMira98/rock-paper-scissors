@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import R from "../images/rock.png";
+
 function App() {
   const choices = ["rock", "paper", "scissor"];
 
@@ -67,7 +69,7 @@ function App() {
         Rock, Paper, Scissors
       </h1>
       <img
-        src={`../public/images/rock-paper-scissors.png`}
+        src={`../images/rock-paper-scissors.png`}
         alt="Rock-Paper-Scissors-image"
         className="w-16 m-auto mx-auto mt-6"
       />
@@ -104,7 +106,7 @@ function App() {
           <h3 className="text-center text-sm sm:text-base">Your Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
-              src={`../public/images/${userChoice}.png`}
+              src={`../images/${userChoice}.png`}
               alt="rock-hand-image"
               className={
                 userChoice === choices[2]
@@ -118,7 +120,7 @@ function App() {
           <h3 className="text-center text-sm sm:text-base">Com's Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
-              src={`../public/images/${computerChoice}.png`}
+              src={`../images/${computerChoice}.png`}
               alt="paper-hand-image"
               className={
                 computerChoice === choices[2]
@@ -139,7 +141,7 @@ function App() {
             onClick={rockOnClick}
           >
             <img
-              src={`../public/images/rock.png`}
+              src={R}
               alt="Rock"
               className="w-10 sm:w-16 rotate-45"
             />
@@ -149,7 +151,7 @@ function App() {
             onClick={paperOnClick}
           >
             <img
-              src={`../public/images/paper.png`}
+              src={`../images/paper.png`}
               alt="Paper"
               className="w-10 sm:w-16 scale-x-[-1] rotate-[-45deg]"
             />
@@ -160,7 +162,7 @@ function App() {
           onClick={scissorOnClick}
         >
           <img
-            src={`../public/images/scissor.png`}
+            src={`../images/scissor.png`}
             alt="Scissor"
             className="w-10 sm:w-16 rotate-90"
           />
