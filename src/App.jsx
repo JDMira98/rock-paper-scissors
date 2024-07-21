@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import R from "../images/rock.png";
-
 function App() {
   const choices = ["rock", "paper", "scissor"];
 
@@ -69,7 +67,7 @@ function App() {
         Rock, Paper, Scissors
       </h1>
       <img
-        src={`../images/rock-paper-scissors.png`}
+        src={`../images/rock-paper-scissors.PNG`}
         alt="Rock-Paper-Scissors-image"
         className="w-16 m-auto mx-auto mt-6"
       />
@@ -106,7 +104,7 @@ function App() {
           <h3 className="text-center text-sm sm:text-base">Your Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
-              src={`../images/${userChoice}.png`}
+              src={`../images/${userChoice}.PNG`}
               alt="rock-hand-image"
               className={
                 userChoice === choices[2]
@@ -120,7 +118,7 @@ function App() {
           <h3 className="text-center text-sm sm:text-base">Com's Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
-              src={`../images/${computerChoice}.png`}
+              src={`../images/${computerChoice}.PNG`}
               alt="paper-hand-image"
               className={
                 computerChoice === choices[2]
@@ -132,7 +130,7 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-14 gap-4">
-        <h2 className="text-white sm:text-lg bg-[#1E3539] py-1 px-4 rounded-[3px]">
+        <h2 className="text-white sm:text-lg bg-[#65abb7] py-1 px-4 rounded-[3px]">
           Lock Your Choice
         </h2>
         <div className="flex justify-center gap-10 items-center">
@@ -141,7 +139,7 @@ function App() {
             onClick={rockOnClick}
           >
             <img
-              src={R}
+              src={`../images/rock.PNG`}
               alt="Rock"
               className="w-10 sm:w-16 rotate-45"
             />
@@ -151,7 +149,7 @@ function App() {
             onClick={paperOnClick}
           >
             <img
-              src={`../images/paper.png`}
+              src={`../images/paper.PNG`}
               alt="Paper"
               className="w-10 sm:w-16 scale-x-[-1] rotate-[-45deg]"
             />
@@ -162,7 +160,7 @@ function App() {
           onClick={scissorOnClick}
         >
           <img
-            src={`../images/scissor.png`}
+            src={`../images/scissor.PNG`}
             alt="Scissor"
             className="w-10 sm:w-16 rotate-90"
           />
