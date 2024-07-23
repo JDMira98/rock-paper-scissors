@@ -7,7 +7,7 @@ function App() {
   const [computerChoice, setComputerChoice] = useState("paper");
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [result, setResult] = useState("Let's Play");
+  const [result, setResult] = useState("Vamos a jugar!!");
   const [gameStart, setGameStart] = useState(false);
 
   const computerSelect = () => {
@@ -50,10 +50,10 @@ function App() {
       (userChoice === "scissor" && computerChoice === "paper")
     ) {
       setUserScore(userScore + 1);
-      setResult("You Won!!🥳🥳");
+      setResult("Ganaste!!🥳🥳");
     } else {
       setComputerScore(computerScore + 1);
-      setResult("You Lost!!😖😓");
+      setResult("Perdiste!!😖😓");
     }
   };
 
@@ -64,7 +64,7 @@ function App() {
   return (
     <div className='overflow-x-hidden p-4 font-["Poppins"] bg-gradient-radial from-[#70a9a1] to-[#14272d] min-h-screen'>
       <h1 className="text-white mx-auto w-max text-3xl max-w-5xl sm:text-4xl">
-        Rock, Paper, Scissors
+        Piedra, Papel o Tijera...
       </h1>
       <img
         src={`./images/rock-paper-scissors.png`}
@@ -72,12 +72,12 @@ function App() {
         className="w-16 m-auto mx-auto mt-6"
       />
       <div className="flex justify-between gap-1 text-white max-w-5xl mx-auto mt-10 items-center flex-wrap text-sm sm:text-xl">
-        <p className="bg-[#1E3539] py-1 px-2 sm:px-4 rounded-[3px]">
-          My Score - {userScore}
+        <p className="bg-[#000000] py-1 px-2 sm:px-4 rounded-[3px]">
+          Mi puntaje :  {userScore}
         </p>
 
-        <p className="bg-[#1E3539] py-1 px-2 sm:px-4 rounded-[3px]">
-          Computer Score - {computerScore}
+        <p className="bg-[#000000] py-1 px-2 sm:px-4 rounded-[3px]">
+          Computadora :  {computerScore}
         </p>
       </div>
       <p
@@ -101,7 +101,7 @@ function App() {
       )}
       <div className="flex justify-center gap-12 text-white max-w-5xl mx-auto mt-10 sm:gap-28">
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
-          <h3 className="text-center text-sm sm:text-base">Your Choice</h3>
+          <h3 className="text-center text-sm sm:text-base">Elegiste</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
               src={`./images/${userChoice}.png`}
@@ -115,7 +115,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
-          <h3 className="text-center text-sm sm:text-base">Com's Choice</h3>
+          <h3 className="text-center text-sm sm:text-base">Contra</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
               src={`./images/${computerChoice}.png`}
@@ -130,8 +130,8 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-14 gap-4">
-        <h2 className="text-white sm:text-lg bg-[#65abb7] py-1 px-4 rounded-[3px]">
-          Lock Your Choice
+        <h2 className="text-white sm:text-lg bg-[#000000] py-1 px-4 rounded-[3px]">
+          Elige
         </h2>
         <div className="flex justify-center gap-10 items-center">
           <button
